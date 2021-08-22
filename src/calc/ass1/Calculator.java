@@ -2,18 +2,17 @@ package calc.ass1;
 
 
 public class Calculator {
-	public double multi(int n1, int n2)
-	{
-		return n1*n2;
-	}
-	public double div(int n1, int n2){
-		return n1/n2;
-	}
+	
 	public static void main(String[] args) {
 		
-		Calculator obj = new Calculator();
-		System.out.println(obj.multi(20,10));
-		System.out.println(obj.div(20,10));
+		 int num1=Integer.parseInt(args[0]);
+        int num2=Integer.parseInt(args[1]);
+      
+ System.out.println("Addition: " + (num1 + num2));
+ System.out.println("Subtraction: " + (num1 - num2));
+ System.out.println("Multiplication: " + (num1 * num2));
+ System.out.println("Division: " + (num1 / num2));
+ System.out.println("Modulus: " + (num1 % num2));
 
 	    
 	  }
